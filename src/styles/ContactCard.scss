@@ -1,0 +1,55 @@
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem;
+    flex-wrap: wrap;
+
+    .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    flex: 0 0 23.333333%;
+    width: 200px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    height: 350px;
+    box-shadow: 5px 5px 5px 1px rgba(120,120,120,0.44);
+    -webkit-box-shadow: 5px 5px 5px 1px rgba(120,120,120,0.44);
+    -moz-box-shadow: 5px 5px 5px 1px rgba(120,120,120,0.44);
+
+        &--image {
+            width: 100%;
+            padding: 10%;
+            padding-bottom: 0;
+        }
+
+        &--name {
+            margin-block: 13px;
+            color: #333333;
+        }
+
+        &--info {
+            padding: 10px
+        }
+        &--favorite {
+            width: 25px;
+            cursor: pointer;
+        }
+        &--location{
+            padding: .5rem;
+        }
+        &--icon {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.75rem;
+            color: #333333;
+            margin-block: 7px;
+        }
+    }
+}
+
+
+

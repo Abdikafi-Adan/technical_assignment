@@ -8,7 +8,6 @@ export default function Search() {
             <div className="icon__sort">
                 <span className='icon__sort'> 
                     <i class="far fa-sort-alpha-down"></i>      
-                    <i class="far fa-sort-alpha-down"></i>
                 </span>
 
 

@@ -1,11 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "../styles/search.scss"
 
 export default function Search() {
+    const [grid,setGrid] = useState(false)
+
+    const gridToggel = () => {
+        setGrid(!grid)
+    }
     return (
 
         <div className="icon">
             <div className="icon__sort">
+                
                 <span className='icon__sort'> 
                     <i class="far fa-sort-alpha-down"></i>      
                 </span>
@@ -24,10 +30,14 @@ export default function Search() {
 
             <div className="icon__grid">
 
-                <span className='icon__grid'> 
-                <i class="far fa-th-large"></i>
-                 <i class="fas fa-bars"></i>
+                <span className='icon__grid'
+                    onClick={gridToggel}
+                > 
+                {grid ?  <i class="far fa-th-large"></i> : <i class="fas fa-bars"></i> }
+               
+                 
                 </span>
+                
             </div>
 
 

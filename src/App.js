@@ -23,7 +23,7 @@ function App() {
     return (
       <div className="App">
         <Header />
-        <Search />
+        <Search  />
         <ContactCard 
           person={person}
           setperson={setPerson}

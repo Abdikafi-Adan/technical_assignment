@@ -7,8 +7,8 @@ import ContactCard from './components/ContactCard';
 function App() {
   const [person, setPerson] = useState([]);
   const [loding, setLoding] = useState(false);
+  const [grid,setGrid] = useState(true)
   useEffect(function () {
-    console.log("Effect ran");
     fetch(`https://randomuser.me/api/?results=12`)
       .then((res) => res.json())
       .then((data) => setPerson(data.results));
@@ -23,10 +23,17 @@ function App() {
     return (
       <div className="App">
         <Header />
-        <Search  />
+        <Search  
+        grid={grid}
+        setGrid={setGrid}
+           
+        />
         <ContactCard 
           person={person}
           setperson={setPerson}
+         grid={grid}
+          setGrid={setGrid}
+          
         />
       </div>
     );

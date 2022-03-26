@@ -1,8 +1,7 @@
 import React, { useState } from 'react'
 import "../styles/search.scss"
 
-export default function Search() {
-    const [grid,setGrid] = useState(false)
+export default function Search({ grid, setGrid}) {
 
     const gridToggel = () => {
         setGrid(!grid)
@@ -33,7 +32,7 @@ export default function Search() {
                 <span className='icon__grid'
                     onClick={gridToggel}
                 > 
-                {grid ?  <i class="far fa-th-large"></i> : <i class="fas fa-bars"></i> }
+                {grid ?  <i class="fas fa-grip-horizontal"></i> : <i class="fas fa-bars"></i> }
                
                  
                 </span>
